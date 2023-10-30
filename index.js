@@ -11,7 +11,7 @@ app.use(cors({
 
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://Nikita:qazwsxedccool1@cluster0.yhc9bmf.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://igniy:Kvashnin2003@cluster0.s8zdzw8.mongodb.net/?retryWrites=true&w=majority')
 
 app.get('/', (req, res) => {
     ComponentModel.find({})
