@@ -6,12 +6,12 @@ const ComponentModel = require('./models/Components')
 const app = express()
 app.use(cors({
     origin: ["http://localhost:5173", "http://localhost:4173",
-     "https://pr5apiclient.onrender.com"]
+     "https://client-gjvj.onrender.com"]
 }))
 
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://Nikita:qazwsxedccool1@cluster0.yhc9bmf.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://Yuriy:EVb66Y7UnrYtdnme@cluster0.s8zdzw8.mongodb.net/?retryWrites=true&w=majority')
 
 app.get('/', (req, res) => {
     ComponentModel.find({})
